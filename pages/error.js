@@ -3,37 +3,37 @@ import Link from "next/link";
 import Head from "next/head";
 
 export default function Error(){
-
     return (
         <>
             <Head>
                 <title>Ooops...</title>
                 <meta name="viewport" content="width=device-width"/>
             </Head>
-            <div className={classes.wrapper}>
-                <div>
-                    <div className={classes.notFound}>
-                        <p>404</p>
-                    </div>
+            <section className={classes.wrapper}>
 
-                    <div className={classes.description}>
-                        <h3 className={classes.firstH}>Такой страницы нет</h3>
-                        <h3 className={classes.secondH}>Но есть другие полезные страницы</h3>
-                    </div>
+                <h1 className={classes.notFound}>404</h1>
 
-                    <div className={classes.links}>
+                <p className={classes.descriptionNotFound}>Такой страницы нет</p>
+                <p className={classes.description}>Но есть другие полезные страницы</p>
+
+                <ol className={classes.links}>
+                    <li>
                         <Link href="https://sbercloud.ru/ru/warp/gitlab-about">
                             <a>Миграция в облако Cloud</a>
                         </Link>
+                    </li>
+                    <li >
                         <Link href="https://sbercloud.ru/ru/products/elastic-cloud-server">
                             <a>Elastic Cloud Server+</a>
                         </Link>
+                    </li>
+                    <li>
                         <Link href="https://sbercloud.ru/ru/aicloud/mlspace">
                             <a>Популярный сервис</a>
                         </Link>
-                    </div>
-                </div>
-            </div>
+                    </li>
+                </ol>
+            </section>
         </>
     );
 }
