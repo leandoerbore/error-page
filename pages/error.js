@@ -29,7 +29,7 @@ export default function Error(){
                             <a>Elastic Cloud Server+</a>
                         </Link>
                         <Link href="https://sbercloud.ru/ru/aicloud/mlspace">
-                            <a>Популярные сервис</a>
+                            <a>Популярный сервис</a>
                         </Link>
                     </div>
                 </div>
