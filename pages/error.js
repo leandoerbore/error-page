@@ -3,13 +3,16 @@ import Link from "next/link";
 import Head from "next/head";
 
 export default function Error(){
+
+
+
     return (
         <>
             <Head>
                 <title>Ooops...</title>
                 <meta name="viewport" content="width=device-width"/>
             </Head>
-            <section className={classes.wrapper}>
+            <section className={classes.errorWrapper}>
 
                 <h1 className={classes.notFound}>404</h1>
 

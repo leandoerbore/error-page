@@ -1,4 +1,4 @@
-.wrapper{
+.errorWrapper{
     padding-top: 178px;
     margin: 0 auto;
     max-width: 317px;
@@ -68,13 +68,6 @@
         color: #63696E;
     }
 }
-
-@media (max-width: 768px) {
-    .errorWrapper{
-        padding-top: 144px;
-    }
-}
-
 @media (max-width: 375px) {
     .errorWrapper{
         padding-top: 136px;
@@ -82,7 +75,7 @@
 }
 
 @media (max-width: 375px) {
-    .description{
+    .descriptionNotFound{
         padding-top: 8px;
     }
 }
@@ -90,5 +83,11 @@
 @media (max-width: 375px){
     .links{
         padding-top: 46px;
+    }
+}
+
+@media (max-width: 768px) {
+    .errorWrapper{
+        padding-top: 144px;
     }
 }
